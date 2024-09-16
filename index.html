@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>morjina</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="tailwind.config.js"></script>
+</head>
+<body> 
+
+    <div class="fixed top-0 right-0 w-11/12 -z-10 translate-y-[-80%]">
+       <img src="./img/header-bg-color.png" alt="" class="w-full">
+    </div>
+    <nav class="w-full fixed px-4 lg:px-8 xl:px[8%] py-4 flex items-center justify-between z-50">
+      <!-- <h1 class="cursor-pointer mr-14 text-3xl font-bold">Morjina.</h1> -->
+        <img src="./img/logo.png" alt="logo" class="w-28 cursor-pointer mr-14">
+        <ul class="hidden md:flex items-center gap-6 lg:gap-8 rounded-full  px-12 py-3 bg-white shadow-sm bg-opacity-50">
+           <li><a href="#top">Home</a></li>
+           <li><a href="#About">About Me</a></li>
+           <li><a href="#services">Services</a></li>
+           <li><a href="#work">My Work</a></li>
+           <li><a href="#contact">Contact Me</a></li>
+        </ul>
+        <div class="flex items-center gap-4">
+          <button><img src="./img/moon_icon.png" alt="" class="w-6"></button>
+          <a href="#contact" class="hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4">Contact <img src="./img/arrow-icon.png" alt="" class="w-3"></a>
+          <button class="block md:hidden ml-3 " onclick="openmenu()">
+               <img src="./img/menu-black.png" alt="" class="w-6">
+          </button>
+        </div>
+
+<!-- ----------------mobile menu ----------------- -->
+         <ul id="sidemenu" class="flex md:hidden gap-4 flex-col py-20 px-10 fixed  -right-64 top-0 bottom-0 w-64 z-50 h-screen bg-rose-50 transition duration-500">
+            
+          <div class="absolute right-6 top-9 " onclick="closemenu()">
+              <img src="./img/close-black.png" alt="" class="w-5 cursor-pointer">
+          </div>
+            <li><a href="#top" onclick="closemenu()">Home</a></li>
+            <li><a href="#About" onclick="closemenu()">About Me</a></li>
+            <li><a href="#services" onclick="closemenu()">Services</a></li>
+            <li><a href="#work" onclick="closemenu()">My Work</a></li>
+            <li><a href="#contact" onclick="closemenu()">Contact Me</a></li>
+         </ul>
+    </nav>
+  <!-- ----------------------header------------------------- -->
+   <div class="w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-4">
+        <img src="./img/profile-img.png" alt="" class="rounded-full w-32">
+        <h3 class="flex items-center gap-2 text-xl md:text-2xl mb:3">Hi! I'm Morjina  <img src="./img/hand-icon.png" alt="" class="w-6"></h3>
+        <h1 class="text-3xl sm:text-6xl lg:text-[55px]">Frontend Web Developer</h1>
+        <p class="max-w-2xl mx-auto ">Full and fresh hand code is my power.I love to solve real-world problems.Client satisfaction is my first priority. Work with me and be happy with the result.</p>
+        <div class="flex flex-col sm:flex-row items-center gap-4 mt-4">
+          <a href="#contact" class="px-10 py-3 border rounded-full bg-gradient-to-r from-[#b820e6] to-[#da7d20] text-white  flex items-center gap-2">Contact Me <img src="./img/right-arrow-white.png" alt="" class="w-4"></a>
+          <a href="./img/resume.jpg " download class="px-10 py-3 border rounded-full border-gray-500 bg-white  flex items-center gap-2">My Resume<img src="./img/download-icon.png" alt="" class="w-4"></a>
+        </div>
+   
+   </div>
+
+  <!-- ---------------------------About Me --------------------------- -->
+   <div id="About" class="w-full px-[12%] py-10 scroll-mt-20">
+       <h4 class="text-center mb-2 text-lg">Introduction</h4>
+       <h2 class="text-center text-5xl">About Me</h2>
+       <div class="flex w-full flex-col lg:flex-row items-center gap-20 my-20">
+           <div class="max-w-max mx-auto relative">
+               <img src="./img/user-image.png" alt="" class="w-64 sm:w-80 rounded-3xl max-w-none">
+               <div class="bg-white w-1/2 aspect-square absolute right-0 bottom-0 rounded-full translate-x-1/4 translate-y-1/3 shadow-[0_4px_55px_rgba(149,0,162,0.15)] flex items-center justify-center">
+                  <img src="./img/circular-text.png" alt="" class="w-full">
+                  <img src="./img/dev-icon.png" alt="" class="w-1/4 absolute top-1/2 left-1/2 -translate-x-1/2  -translate-y-1/2">
+               </div>
+           </div>
+           <div class="flex-1">
+               <p class="mb-10 max-w-2xl">
+                  Hello, Iam Morjina . Iam a pixel-perfect Front End  web developer. I am experienced and an expert in the Front End  web development section and working since 2021. Full and fresh hand code is my power.I am passionate about learning .  I love to solve real-world problems.I am strategic and goal-oriented, and I always work with an end goal in mind.Client satisfaction is my first priority.  Work with me and be happy with the result.
+              </p>
+              <ul class="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl">
+                 <li class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg0-[#fcf4ff] hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000000]">
+                  <img src="./img/code-icon.png" alt="" class="w-7 mt-3">
+                  <h3 class="my-4 font-semibold text-gray-700">languagse</h3>
+                  <p>HTML5 , CSS3, JavaScript ,React JS </p>
+                
+                </li>
+                 <li class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg0-[#fcf4ff] hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000000]">
+                  <img src="./img/edu-icon.png" alt="" class="w-7 mt-3">
+                  <h3 class="my-4 font-semibold text-gray-700"> Education</h3>
+                  <p>B.Sc. in CSE</p>
+                
+                </li>
+                 <li class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg0-[#fcf4ff] hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000000]">
+                  <img src="./img/project-icon.png" alt="" class="w-7 mt-3">
+                  <h3 class="my-4 font-semibold text-gray-700">Projects</h3>
+                  <p>Built more than 5 projects</p>
+                
+                </li>
+              </ul>
+              <h4 class="my-3 text-gray-700"> Tools I use</h4>
+              <ul class="flex items-center gap-3 sm:gap-5">
+                 <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg  cursor-pointer hover:-translate-y-1 duration-500 gap-2"><img src="./img/vscode.png" alt="" class="w-5 sm:w-7"></li>
+                 <li class="flex items-center  w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg  cursor-pointer hover:-translate-y-1 duration-500 gap-2"><img src="./img/firebase.png" alt="" class="w-5 sm:w-7"></li>
+                 <li class="flex items-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg  cursor-pointer hover:-translate-y-1 duration-500 gap-2"><img src="./img/mongodb.png" alt="" class="w-5 sm:w-7"></li>
+                 <li class="flex items-center  w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg  cursor-pointer hover:-translate-y-1 duration-500 gap-2"><img src="./img/figma.png" alt="" class="w-5 sm:w-7"></li>
+                 <li class="flex items-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg  cursor-pointer hover:-translate-y-1 duration-500 gap-2"><img src="./img/git.png" alt="" class="w-5 sm:w-7"></li>
+              </ul>
+           </div>
+       </div>
+   </div>
+  <!-- ------------------ services ---------------------- -->
+   <div id="services" class="w-full px-[12%] py-10 scroll-mt-20">
+      <h4 class="text-center mb-2 text-lg">What i offer</h4>
+      <h4 class="text-center text-5xl">My services</h4>
+      <p class="text-center max-w-2xl  mx-auto mt-5 mb-12"> I am experienced and an expert in the Front End web development section and working since 2021. I Client satisfaction is my first priority. Work with me and be happy with the result.</p>
+
+      <div class="grid grid-cols-4  gap-6 my-10">
+          <div class="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-[4px_4px_0_#000000] cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500">
+             <img src="img/web-icon.png" alt="" class="w-6">
+             <h3 class="text-lg my-4 text-gray-700">Wed desing</h3>
+             <p class="text-sm text-gray-600 leading-5">Web development is the process of building, programming...</p>
+             <a href="#" class="flex items-center gap-2 mt-5 text-sm">Read more <img src="./img/right-arrow.png" alt="" class="w-4"></a>
+          </div>
+          <div class="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-[4px_4px_0_#000000] cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500">
+            <img src="img/mobile-icon.png" alt="" class="w-6">
+            <h3 class="text-lg my-4 text-gray-700">Mobile app</h3>
+            <p class="text-sm text-gray-600 leading-5">Web development is the process of building, programming...</p>
+            <a href="#" class="flex items-center gap-2 mt-5 text-sm">Read more <img src="./img/right-arrow.png" alt="" class="w-4"></a>
+         </div>
+         <div class="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-[4px_4px_0_#000000] cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500">
+          <img src="img/ui-icon.png" alt="" class="w-6">
+          <h3 class="text-lg my-4 text-gray-700">UI/ UX design</h3>
+          <p class="text-sm text-gray-600 leading-5">Web development is the process of building, programming...</p>
+          <a href="#" class="flex items-center gap-2 mt-5 text-sm">Read more <img src="./img/right-arrow.png" alt="" class="w-4"></a>
+       </div>
+       <div class="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-[4px_4px_0_#000000] cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500">
+        <img src="img/graphics-icon.png" alt="" class="w-6">
+        <h3 class="text-lg my-4 text-gray-700">Graphics design</h3>
+        <p class="text-sm text-gray-600 leading-5">Web development is the process of building, programming.../p>
+        <a href="#" class="flex items-center gap-2 mt-5 text-sm">Read more <img src="./img/right-arrow.png" alt="" class="w-4"></a>
+     </div>
+      </div>
+   </div>
+ 
+<!-- ----------------my work----------------------- -->
+
+<div id="work" class="w-full px-[12%] py-10 scroll-mt-20">
+  <h4 class="text-center mb-2 text-lg">My portfolio</h4>
+  <h4 class="text-center text-5xl">My latest work</h4>
+  <p class="text-center max-w-2xl  mx-auto mt-5 mb-12">Welcome to my web development portfolio! Explore a collection of projects showcasing my expertise in front-end development.</p>
+
+
+  <div class="grid grid-cols-4 my-10 gap-5">
+    <div class="aspect-square bg-[url('./img/workme.png')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group">
+      <div class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 px-5 py-2 flex items-center justify-between duration-500 group-hover:bottom-7">
+        <div>
+           <h2 class="font-semibold text-2xl">QuizApp</h2>
+           <p class="text-sm text-gray-700">Frontend project</p>
+        </div>
+      </div>
+
+    </div>
+     
+  </div>
+
+  </div>
+
+
+    <script src="app.js"></script>
+</body>
+</html>
