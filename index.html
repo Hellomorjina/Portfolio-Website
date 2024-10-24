@@ -1,22 +1,23 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en" class="scroll-smooth dark">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>morjina</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script src="tailwind.config.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Ovo&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="tailwind.config.js"></script>
+  <link rel="stylesheet" href="style.css">
 </head>
-<body class="overflow-x-hidden font-outfit leading-8"> 
+<body class="overflow-x-hidden font-outfit leading-8 dark:bg-[#11001f] dark:text-white "> 
 
-    <div class="fixed top-0 right-0 w-11/12 -z-10 translate-y-[-80%]">
+    <div class="fixed top-0 right-0 w-11/12 -z-10 translate-y-[-80%] dark:hidden">
        <img src="./img/header-bg-color.png" alt="" class="w-full">
     </div>
     <nav class="w-full fixed px-4 lg:px-8 xl:px[8%] py-4 flex items-center justify-between z-50">
-      <h1 class="cursor-pointer mr-14 text-3xl font-bold text-center items-center font-ovo flex text-[#fd4900]"><img src="./img/hellomorjinalogo.jpg" class="w-14" alt="">Morjina <span class="text-[#170045]">.</span></h1>
+      <h1 class="cursor-pointer mr-14 text-3xl font-bold text-center items-center font-ovo flex text-[#fd4900]"><img src="./img/hellomorjinalogo.jpg" class="w-14 rounded-full" alt="">Morjina <span class="text-[#170045]  dark:text-white">.</span></h1>
         <!-- <img src="./img/logo.png" alt="logo" class="w-28 cursor-pointer mr-14"> -->
         <ul class="hidden md:flex items-center gap-6 lg:gap-8 rounded-full  px-12 py-3 bg-white shadow-sm bg-opacity-50 ">
            <li><a href="#top">Home</a></li>
@@ -47,7 +48,7 @@
          </ul>
     </nav>
   <!-- ----------------------header------------------------- -->
-   <div class="w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-4">
+   <div id="top" class="hero_bg w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-4 ">
         <img src="./img/profile-img.png" alt="" class="rounded-full w-32">
         <h3 class="flex items-center gap-2 text-xl md:text-2xl mb:3 font-ovo">Hi! I'm Morjina  <img src="./img/Myheadding.png" alt="" class="w-6"></h3>
         <h1 class="text-3xl sm:text-6xl lg:text-[55px] font-ovo">Frontend Web Developer</h1>
@@ -76,19 +77,19 @@
                   Hello, Iam Morjina . Iam a Front End  web developer. Full and fresh hand code is my power.I am passionate about learning .I love to solve real-world problems.I am strategic and goal-oriented, and I always work with an end goal in mind.Client satisfaction is my first priority.  Work with me and be happy with the result.
               </p>
               <ul class="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl">
-                 <li class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg0-lighthover hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000000]">
+                 <li class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg0-lighthover hover:-translate-y-1 duration-500 hover:shadow-black">
                   <img src="./img/code-icon.png" alt="" class="w-7 mt-3">
                   <h3 class="my-4 font-semibold text-gray-700">languagse</h3>
                   <p>HTML5 , CSS3, JavaScript ,React JS </p>
                 
                 </li>
-                 <li class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-lighthover hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000000]">
+                 <li class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-lighthover hover:-translate-y-1 duration-500 hover:shadow-black">
                   <img src="./img/edu-icon.png" alt="" class="w-7 mt-3">
                   <h3 class="my-4 font-semibold text-gray-700"> Education</h3>
                   <p>B.Sc. in CSE</p>
                 
                 </li>
-                 <li class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg0-lighthover hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000000]">
+                 <li class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg0-lighthover hover:-translate-y-1 duration-500 hover:shadow-black">
                   <img src="./img/project-icon.png" alt="" class="w-7 mt-3">
                   <h3 class="my-4 font-semibold text-gray-700">Projects</h3>
                   <p>Built more than 5 projects</p>
@@ -113,25 +114,25 @@
       <p class="text-center max-w-2xl font-ovo mx-auto mt-5 mb-12"> I am experienced and an expert in the Front End web development section and working since 2021. I Client satisfaction is my first priority. Work with me and be happy with the result.</p>
 
       <div class="grid grid-cols-4  gap-6 my-10">
-          <div class="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-[4px_4px_0_#000000] cursor-pointer hover:bg-lighthover hover:-translate-y-1 duration-500">
+          <div class="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-black cursor-pointer hover:bg-lighthover hover:-translate-y-1 duration-500">
              <img src="img/web-icon.png" alt="" class="w-6">
              <h3 class="text-lg my-4 text-gray-700">Wed desing</h3>
              <p class="text-sm text-gray-600 leading-5">Web development is the process of building, programming...</p>
              <a href="#" class="flex items-center gap-2 mt-5 text-sm">Read more <img src="./img/right-arrow.png" alt="" class="w-4"></a>
           </div>
-          <div class="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-[4px_4px_0_#000000] cursor-pointer hover:bg-lighthover hover:-translate-y-1 duration-500">
+          <div class="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-black cursor-pointer hover:bg-lighthover hover:-translate-y-1 duration-500">
             <img src="img/mobile-icon.png" alt="" class="w-6">
             <h3 class="text-lg my-4 text-gray-700">Mobile app</h3>
             <p class="text-sm text-gray-600 leading-5">Web development is the process of building, programming...</p>
             <a href="#" class="flex items-center gap-2 mt-5 text-sm">Read more <img src="./img/right-arrow.png" alt="" class="w-4"></a>
          </div>
-         <div class="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-[4px_4px_0_#000000] cursor-pointer hover:bg-lighthover hover:-translate-y-1 duration-500">
+         <div class="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-black cursor-pointer hover:bg-lighthover hover:-translate-y-1 duration-500">
           <img src="img/ui-icon.png" alt="" class="w-6">
           <h3 class="text-lg my-4 text-gray-700">UI/ UX design</h3>
           <p class="text-sm text-gray-600 leading-5">Web development is the process of building, programming...</p>
           <a href="#" class="flex items-center gap-2 mt-5 text-sm">Read more <img src="./img/right-arrow.png" alt="" class="w-4"></a>
        </div>
-       <div class="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-[4px_4px_0_#000000] cursor-pointer hover:bg-lighthover hover:-translate-y-1 duration-500">
+       <div class="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-black cursor-pointer hover:bg-lighthover hover:-translate-y-1 duration-500">
         <img src="img/graphics-icon.png" alt="" class="w-6">
         <h3 class="text-lg my-4 text-gray-700">Graphics design</h3>
         <p class="text-sm text-gray-600 leading-5">Web development is the process of building, programming.../p>
@@ -221,10 +222,10 @@
       <p class="text-center max-w-2xl  mx-auto mt-5 mb-12 font-ovo">I'd love to hear from you! If you have any questions, comments or feedback, please use the form below.</p>
       <form action="" class="max-w-2xl mx-auto">
          <div class="grid grid-cols-2 gap-6 mt-10 mb-8">
-            <input type="text" placeholder="Enter your name" class="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white">
-            <input type="email" placeholder="Enter your email" class="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white">
+            <input type="text"placeholder="Enter your name" class="flex-1 p-3 outline-none border-[0.5px] border-gray-400  rounded-md bg-white cuntbarder ">
+            <input type="email" placeholder="Enter your email" class="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white cuntbarder">
          </div>
-         <textarea rows="6" name="" id="" placeholder="Enter your message" class="w-full p-4 outline-none border-[0.5px] border-gray-400 rounded-md bg-white mb-6"></textarea>
+         <textarea rows="6" name="" id="" placeholder="Enter your message" class="w-full p-4 outline-none border-[0.5px] border-gray-400 cuntbarder rounded-md bg-white mb-6"></textarea>
       </form>
       <button class="py-3 px-8 w-max flex items-center justify-butween gap-2 bg-[#170045]/80 text-white rounded-full mx-auto hover:bg-[#170045] duration-500">Submit now
          <img src="./img/right-arrow-white.png" alt="" class="w-4">
@@ -235,11 +236,11 @@
      <div class="mt-20">
         <div class="text-center">
           <div class="w-max mx-auto">
-            <h1 class="cursor-pointer mr-14 text-5xl font-bold text-center items-center font-ovo flex text-[#fd4900] mx-auto mb-2"><img src="./img/hellomorjinalogo.jpg" class="w-[75px]" alt="">Morjina <span class="text-[#170045]">.</span></h1>
+            <h1 class="cursor-pointer mr-14 text-5xl font-bold text-center items-center font-ovo flex text-[#fd4900] mx-auto mb-2"><img src="./img/hellomorjinalogo.jpg" class="w-[75px]" alt="">Morjina <span class="text-[#170045] dark:text-white">.</span></h1>
           </div>
             <!-- <img src="./img/logo.png" alt="" class="w-30 mx-auto mb-2"> -->
             <div class="w-max mx-auto flex items-center gap-2">
-              fmorjina111@gmail.com </div>
+             <a href="">fmorjina111@gmail.com </a> </div>
         </div>
         <div>
             <div class="text-center sm:flex items-center justify-between border-t border-gray-400 mx-[10%] mt-10 py-5">
@@ -252,6 +253,8 @@
             </div>
         </div>
      </div>
+
+ 
 
     <script src="app.js"></script>
 </body>
