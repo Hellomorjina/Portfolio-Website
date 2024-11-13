@@ -16,11 +16,11 @@ const navlink = document.querySelector('nav ul');
 
 window.addEventListener('scroll',() =>{
     if(scrollY > 50){
-      navbar.classList.add('bg-white', 'bg-opacity-50', 'backdrop-filter', 'backdrop-blur-lg', 'shadow-sm');
-      navlink.classList.remove('bg-white','shadow-sm','bg-opacity-50',);
+      navbar.classList.add('bg-white', 'bg-opacity-50', 'backdrop-filter', 'backdrop-blur-lg', 'shadow-sm','dark:bg-[#11001f]','dark:shadow-white/20');
+      navlink.classList.remove('bg-white','shadow-sm','bg-opacity-50','dark:border ','dark:border-white/50');
     }else{
-      navbar.classList.remove('bg-white', 'bg-opacity-50', 'backdrop-filter', 'backdrop-blur-lg', 'shadow-sm');
-      navlink.classList.add('bg-white','shadow-sm','bg-opacity-50',);
+      navbar.classList.remove('bg-white', 'bg-opacity-50', 'backdrop-filter', 'backdrop-blur-lg', 'shadow-sm','dark:bg-darkTheme','dark:shadow-white/20');
+      navlink.classList.add('bg-white','shadow-sm','bg-opacity-50','dark:border ','dark:border-white/50');
     }
 })
 
@@ -33,6 +33,7 @@ if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.match
 }
 
 function toggleMode() {
+  document.documentElement.classList.toggle('dark');
   if ( document.documentElement.classList.contains('dark')){
       localStorage.theme = 'dark';
   }else{
