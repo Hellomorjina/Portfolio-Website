@@ -1,4 +1,4 @@
-/* *{
+/* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -9,7 +9,7 @@
   background-repeat: no-repeat;
   max-width:100%;
   min-height: 100vh;
-} */
+}  */
  .cuntbarder:focus{
   border:2px solid rgb(27, 27, 27);
  }
