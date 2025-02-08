@@ -11,7 +11,7 @@
   <script src="tailwind.config.js"></script>
   <link rel="stylesheet" href="style.css">
 </head>
-<body class="overflow-x-hidden font-outfit leading-8 dark:bg-[#11001f] dark:text-white "> 
+<body class="overflow-x-hidden font-outfit leading-8 dark:bg-[#11001f] dark:text-white  "> 
 
     <div class="fixed top-0 right-0 w-11/12 -z-10 translate-y-[-80%] dark:hidden">
        <img src="./img/header-bg-color.png" alt="" class="w-full">
@@ -42,8 +42,7 @@
         </div>
 
 <!-- ----------------mobile menu ----------------- -->
-         <ul id="sidemenu" class="flex md:hidden gap-4 flex-col py-20 px-10 fixed  -right-64 top-0 bottom-0 w-64 z-50 h-screen bg-rose-50 transition duration-500 dark:bg-[#2a004a] dark:text-white
-         ">
+         <ul id="sidemenu" class="flex md:hidden gap-4 flex-col py-20 px-10 fixed  -right-64 top-0 bottom-0 w-64 z-50 h-screen bg-rose-50 transition duration-500 dark:bg-[#2a004a] dark:text-white pt-10">
             
           <div class="absolute right-6 top-9 " onclick="closemenu()">
               <img src="./img/close-black.png" alt="" class="w-5 cursor-pointer dark:hidden">
@@ -57,7 +56,7 @@
          </ul>
     </nav>
   <!-- ----------------------header------------------------- -->
-   <div id="top" class="hero_bg w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-4 ">
+   <div id="top" class=" hero_bg w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-4 ">
         <img src="./img/profile-img.png" alt="" class="rounded-full w-32">
         <h3 class="flex items-center gap-2 text-xl md:text-2xl mb:3 font-ovo">Hi! I'm Morjina  <img src="./img/Myheadding-removebg.png" alt="" class="w-6"></h3>
         <h1 class="text-3xl sm:text-6xl lg:text-[55px] font-ovo">Frontend Web Developer</h1>
@@ -70,7 +69,7 @@
    </div>
 
   <!-- ---------------------------About Me --------------------------- -->
-   <div id="About" class="w-full px-[12%] py-10 scroll-mt-20">
+   <div id="About" class="w-full px-[12%] py-10 scroll-mt-20 ">
        <h4 class="text-center mb-2 text-lg font-ovo">Introduction</h4>
        <h2 class="text-center text-5xl font-ovo">About Me</h2>
        <div class="flex w-full flex-col lg:flex-row items-center gap-20 my-20">
@@ -81,11 +80,11 @@
                   <img src="./img/dev-icon.png" alt="" class="w-1/4 absolute top-1/2 left-1/2 -translate-x-1/2  -translate-y-1/2">
                </div>
            </div>
-           <div class="flex-1">
-               <p class="mb-10 max-w-2xl">
+           <div class="flex-1 ">
+               <p class="mb-10 max-w-2xl ">
                   Hello, Iam Morjina . Iam a Front End  web developer. Full and fresh hand code is my power.I am passionate about learning .I love to solve real-world problems.I am strategic and goal-oriented, and I always work with an end goal in mind.Client satisfaction is my first priority.  Work with me and be happy with the result.
               </p>
-              <ul class="grid grid-cols-2 max-sm:grid-cols-1 gap-6 max-w-2xl">
+              <ul class="grid grid-cols-2 max-sm:grid-cols-1 gap-6 max-w-2xl sm:m-2">
                  <li class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-lighthover hover:-translate-y-1 duration-500 hover:shadow-black dark:border-white dark:hover:shadow-white dark:hover:bg-[#2a004a]">
                   <img src="./img/code-icon.png" alt="" class="w-7 mt-3 dark:hidden">
                   <img src="./img/code-icon-dark.png" alt="" class="w-7 mt-3 hidden dark:block">
@@ -119,9 +118,9 @@
    <div id="services" class="w-full px-[12%] py-10 scroll-mt-20">
       <h4 class="text-center mb-2 text-lg font-ovo">What i offer</h4>
       <h4 class="text-center text-5xl font-ovo">My services</h4>
-      <p class="text-center max-w-2xl font-ovo mx-auto mt-5 mb-12"> I am experienced and an expert in the Front End web development section and working since 2021. I Client satisfaction is my first priority. Work with me and be happy with the result.</p>
+      <p class="text-center max-w-2xl font-ovo mx-auto mt-5 mb-12"> I am experienced and an expert in the Front End web development section and working since 2023. I Client satisfaction is my first priority. Work with me and be happy with the result.</p>
 
-      <div class="grid grid-cols-3 max-sm:grid-cols-1 max-md:grid-cols-2 gap-6 my-10">
+      <div class="grid grid-cols-3 max-sm:grid-cols-1 max-md:grid-cols-2 gap-6 my-10 mx-auto">
           <div class="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-black cursor-pointer hover:bg-lighthover hover:-translate-y-1 duration-500 dark:hover:bg-[#2a004a] dark:hover:shadow-white">
              <img src="img/web-icon.png" alt="" class="w-6">
              <h3 class="text-lg my-4 text-gray-700 dark:text-white">Wed desing</h3>
@@ -152,7 +151,7 @@
   <p class="text-center max-w-2xl font-ovo mx-auto mt-5 mb-12">Welcome to my web development portfolio! Explore a collection of projects showcasing my expertise in front-end development.</p>
 
 
-  <div class="grid grid-cols-4 max-sm:grid-cols-1 max-md:grid-cols-2 my-10 gap-5">
+  <div class="grid grid-cols-4 lg:grid-cols-4 sm:grid-cols-1 md:grid-cols-2 my-10 gap-5 lg:grid-cols-2">
     <div class="aspect-square bg-[url('./img/work-1.png')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group">
       <div class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 px-5 py-2 flex items-center justify-between duration-500 group-hover:bottom-7">
         <div>
